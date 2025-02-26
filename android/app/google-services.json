@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "319387978914",
+    "project_id": "sweetbite-2c88e",
+    "storage_bucket": "sweetbite-2c88e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:319387978914:android:ae1988fe069b089b899bfb",
+        "android_client_info": {
+          "package_name": "com.example.bakery_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK4qi7BNN9JKmIy-4tpRcoFdzsX5tNbK0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
