@@ -1,6 +1,8 @@
  
 import 'package:bakery_app/admin_view/admin_home.dart';
+import 'package:bakery_app/controller/location_controller.dart';
 import 'package:bakery_app/controller/login_controller.dart';
+import 'package:bakery_app/controller/newproductcontoller.dart';
 import 'package:bakery_app/controller/registartion_controller.dart';
 import 'package:bakery_app/firebase_options.dart';
 import 'package:bakery_app/view/bottom_nav_bar.dart';
@@ -20,6 +22,8 @@ runApp(MultiProvider(
   providers: [
     ChangeNotifierProvider(create:(context) => RegistrationController(),),
     ChangeNotifierProvider(create: (context) => LoginScreenController(),),
+      ChangeNotifierProvider(create: (context) => LocationController(),),
+      ChangeNotifierProvider(create:  (context) => NewProductController(),)
   ],
   child: MyApp()));
 }

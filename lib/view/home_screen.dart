@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -49,7 +50,7 @@ class HomeScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Top bar
+           
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -92,11 +93,16 @@ class HomeScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                  )
+                  ),
+                  InkWell(
+                    onTap: () async {
+                      await FirebaseAuth.instance.signOut();
+                    },
+                  child: Icon(Icons.logout))
                 ],
               ),
 
-              // Search bar
+            
               Row(
                 children: [
                   Padding(
